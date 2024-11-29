@@ -1,33 +1,23 @@
-# sML---Iris-Logistic-Regression
+# sML---Iris Segmentation-Logistic-Regression
 
-There are three iris classes in the dataset and we want to create a classifier
-that will predict whether an iris belongs to the ‘Iris-setosa' class or not. This
-means that we have two classes, ‘Iris-setosa' and not-‘Iris-setosa' (which
-consists of 'Iris-versicolor' and 'Iris-virginica' ).
+## Iris-Setosa or Not (Iris-Versicolor, Iris-Virginica)
+There are three iris classes in the dataset and we want to create a classifier that will predict whether an iris belongs to the ‘Iris-setosa' class or not. 
 
-Identify your independent variables x.
+This means that we have two classes, ‘Iris-setosa' and not-‘Iris-setosa' (which consists of 'Iris-versicolor' and 'Iris-virginica' ).
 
-Encode your dependent variable y such that ‘Iris-setosa' is encoded
-as 0, and 'Iris-versicolor' and 'Iris-virginica' are both encoded as 1. (0
-corresponds to the 'Iris-versicolor' class, and 1 corresponds to the
-not-‘Iris-setosa' class.)
+The IVs were identified and set to an variable x.
 
-Split the data into a training and test set.
+The DVs were encoded to 0 and 1, where 0 corresponds to the 'Iris-setosa' class, and 1 corresponds to the
+not-‘Iris-setosa' class, which includes 'Iris-versicolor' and 'Iris-virginica'.
 
-Use sklearn’s logistic regression function to fit a model and make
-predictions on the test set.
+The data was split into a training and test set with an 80:20 split.
 
-Use sklearn to obtain a confusion matrix comparing the predictions
-to the gold labels.
+Sklearn’s logistic regression function was used to fit a model and then make predictions on the test set.
 
-Examine the confusion matrix and predict in a comment whether
-the model is likely to have higher precision, higher recall, or similar
-precision and recall.
+A confusion matrix was then genereated to compare the predictions to the gold labels. The matrix was then examined to make prediction about the models Precisiom and Recall scores.
 
-Write your own code to calculate the accuracy, precision, and recall,
-and check whether your prediction was right.
+The accuracy, precision, and recall scores where calculated and interpreted.
 
-(optional) Repeat this task but change it so that we only have all three
-categories ‘Iris-setosa', 'Iris-versicolor', and 'Iris-virginica' corresponding to the
-numeric values 0, 1, and 2 respectively; this will now be a three-class
-problem. Observe how this changes the confusion matrix.
+## Iris-Setosa OR Iris-Versicolor OR Iris-Virginica
+
+The same steps were repeated above, except when encoding the numeric values of 0, 1 and 2 were used to encode the categories to ‘Iris-setosa', 'Iris-versicolor', and 'Iris-virginica' respectively.
